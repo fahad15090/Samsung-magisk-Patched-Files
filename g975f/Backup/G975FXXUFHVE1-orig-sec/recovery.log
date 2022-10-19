@@ -1,0 +1,757 @@
+Starting TWRP 3.6.2_9-0-395f4387 on Mon May  2 18:40:28 2022
+ (pid 4872)
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_NO_REBOOT_BOOTLOADER := true
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+TW_HAS_DOWNLOAD_MODE := true
+I:TW_BRIGHTNESS_PATH := /sys/class/backlight/panel/brightness
+I:Found brightness file at '/sys/class/backlight/panel/brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 12800
+I:LANG: en
+Starting the UI...
+setting DRM_FORMAT_ABGR8888 and GGL_PIXEL_FORMAT_BGRA_8888, GGL_PIXEL_FORMAT may not match!
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =  16   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =   0   .length =   8
+setting GGL_PIXEL_FORMAT_BGRA_8888
+double buffered
+framebuffer: 0 (1440 x 3040)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 12800
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Scaling theme width 1.333333x and height 1.509375x, offsets x: 0 y: 142 w: 0 h: -142
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+=> Linking mtab
+=> Processing /etc/recovery.fstab for SAR-detection
+I:Reading /etc/recovery.fstab
+I:Done processing fstab files
+I:SAR-DETECT: SAR System detected
+=> Processing /etc/recovery.fstab
+I:Reading /etc/recovery.fstab
+I:Processing '/system_root'
+I:Processing '/vendor'
+I:Created '/vendor' folder.
+I:Processing '/product'
+I:Created '/product' folder.
+I:Processing '/boot'
+I:Processing '/recovery'
+I:Processing '/system_image'
+I:Processing '/vendor_image'
+I:Processing '/product_image'
+I:Processing '/data'
+I:Processing '/dtb'
+I:Processing '/dtbo'
+I:Processing '/modem'
+I:Processing '/efs'
+I:Created '/efs' folder.
+I:Processing '/misc'
+I:Processing '/cache'
+I:Processing '/external_sd'
+I:Created '/external_sd' folder.
+I:Processing '/usb-otg'
+I:Created '/usb-otg' folder.
+I:Done processing fstab files
+I:Setting up '/data' as data/media emulated storage.
+I:mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:No custom recovery folder found. Using TWRP as default.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/R58M4496S0B'
+I:Settings storage is '/data/media/0'
+Updating partition details...
+I:Data backup size is 2411MB, free: 468291MB.
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+
+
+Partition Logs:
+/system_root | /dev/block/platform/13d60000.ufs/by-name/system | Size: 5521MB Used: 5385MB Free: 135MB Backup Size: 5385MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent Mount_Read_Only 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/system
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system_root
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system_root
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/vendor | /dev/block/platform/13d60000.ufs/by-name/vendor | Size: 1065MB Used: 967MB Free: 98MB Backup Size: 967MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent Mount_Read_Only 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/vendor
+   Display_Name: Vendor
+   Storage_Name: Vendor
+   Backup_Path: /vendor
+   Backup_Name: vendor
+   Backup_Display_Name: Vendor
+   Storage_Path: /vendor
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/product | /dev/block/platform/13d60000.ufs/by-name/product | Size: 600MB Used: 118MB Free: 482MB Backup Size: 118MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/product
+   Display_Name: Product
+   Storage_Name: Product
+   Backup_Path: /product
+   Backup_Name: product
+   Backup_Display_Name: Product
+   Storage_Path: /product
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/boot | /dev/block/platform/13d60000.ufs/by-name/boot | Size: 55MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/boot
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/recovery | /dev/block/platform/13d60000.ufs/by-name/recovery | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/recovery
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/system_image | /dev/block/platform/13d60000.ufs/by-name/system | Size: 5700MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/system
+   Display_Name: System Image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System Image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/vendor_image | /dev/block/platform/13d60000.ufs/by-name/vendor | Size: 1100MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/vendor
+   Display_Name: Vendor Image
+   Storage_Name: vendor_image
+   Backup_Path: /vendor_image
+   Backup_Name: vendor_image
+   Backup_Display_Name: Vendor Image
+   Storage_Path: /vendor_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/product_image | /dev/block/platform/13d60000.ufs/by-name/product | Size: 620MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/product
+   Display_Name: Product Image
+   Storage_Name: Product Image
+   Backup_Path: /product_image
+   Backup_Name: product_image
+   Backup_Display_Name: Product Image
+   Storage_Path: /product_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/data | /dev/block/platform/13d60000.ufs/by-name/userdata | Size: 471152MB Used: 2411MB Free: 468291MB Backup Size: 2411MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media/0
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/userdata
+   Crypto_Key_Location: footer
+   Length: -20480
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media/0
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65537
+
+/dtb | /dev/block/platform/13d60000.ufs/by-name/dtb | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/dtb
+   Display_Name: DTB
+   Storage_Name: DTB
+   Backup_Path: /dtb
+   Backup_Name: dtb
+   Backup_Display_Name: DTB
+   Storage_Path: /dtb
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/dtbo | /dev/block/platform/13d60000.ufs/by-name/dtbo | Size: 8MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/dtbo
+   Display_Name: DTBO
+   Storage_Name: DTBO
+   Backup_Path: /dtbo
+   Backup_Name: dtbo
+   Backup_Display_Name: DTBO
+   Storage_Path: /dtbo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/modem | /dev/block/platform/13d60000.ufs/by-name/radio | Size: 50MB
+   Flags: Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/radio
+   Display_Name: Baseband
+   Storage_Name: Baseband
+   Backup_Path: /modem
+   Backup_Name: modem
+   Backup_Display_Name: Baseband
+   Storage_Path: /modem
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/efs | /dev/block/platform/13d60000.ufs/by-name/efs | Size: 15MB Used: 2MB Free: 13MB Backup Size: 2MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/efs
+   Display_Name: EFS
+   Storage_Name: EFS
+   Backup_Path: /efs
+   Backup_Name: efs
+   Backup_Display_Name: EFS
+   Storage_Path: /efs
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/misc | /dev/block/platform/13d60000.ufs/by-name/misc | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/misc
+   Display_Name: Misc
+   Storage_Name: Misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: Misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/cache | /dev/block/platform/13d60000.ufs/by-name/cache | Size: 574MB Used: 3MB Free: 571MB Backup Size: 3MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/platform/13d60000.ufs/by-name/cache
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/external_sd |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/mmcblk0p1
+   Alternate_Block_Device: /dev/block/mmcblk0
+   Display_Name: Micro SDcard
+   Storage_Name: Micro SDcard
+   Backup_Path: /external_sd
+   Backup_Name: external_sd
+   Backup_Display_Name: Micro SDcard
+   Storage_Path: /external_sd
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65538
+
+/usb-otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sdf1
+   Alternate_Block_Device: /dev/block/sdf
+   Display_Name: USB-OTG
+   Storage_Name: USB-OTG
+   Backup_Path: /usb-otg
+   Backup_Name: usb-otg
+   Backup_Display_Name: USB-OTG
+   Storage_Path: /usb-otg
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   MTP_Storage_ID: 65539
+
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Scaling theme width 1.333333x and height 1.509375x, offsets x: 0 y: 142 w: 0 h: -142
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page multiuser_warning
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page installapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page repackselect
+I:Loading page repackconfirm
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page decrypt_pin
+I:Loading page trydecrypt
+I:Loading page canceldecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Loading page decrypt_users
+I:Loading page changeTwrpFolder
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+Startup Commands: 
+ro.boottime.adbd=3080793536
+ro.boottime.init=2849
+ro.boottime.init.selinux=63
+ro.boottime.init.cold_boot_wait=100
+ro.boottime.nuker=3084785921
+ro.boottime.ueventd=2964179921
+ro.boottime.recovery=3079793382
+ro.boottime.set_permissive=3079545613
+ro.config.ringtone=omni_ringtone1.ogg,omni_ringtone1.ogg
+ro.config.alarm_alert=omni_alarm1.ogg
+ro.config.notification_sound=omni_notification1.ogg
+ro.dalvik.vm.native.bridge=0
+dalvik.vm.isa.arm.variant=cortex-a53
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=cortex-a53
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.usejit=true
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.appimageformat=lz4
+dalvik.vm.usejitprofiles=true
+dalvik.vm.stack-trace-dir=/data/anr
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=verify-at-runtime
+dalvik.vm.dex2oat-minidebuginfo=true
+debug.atrace.tags.enableflags=0
+ro.art.hiddenapi.warning=1
+ro.com.google.clientidbase=android-google
+ro.com.android.dataroaming=false
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.opa.eligible_device=true
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.boot.em.did=20020d0e16803a11
+ro.boot.em.model=SM-G975F
+ro.boot.em.status=0x0
+ro.boot.rp=15
+ro.boot.sb.debug0=0x0
+ro.boot.sn.param.offset=7343024
+ro.boot.wb.hs=0e03
+ro.boot.wb.snapQB=CUSTOM
+ro.boot.svb.ver=SVB1.0
+ro.boot.sales.param.offset=7340572
+ro.boot.ulcnt=1
+ro.boot.vbmeta.avb_version=1.1
+ro.boot.sec_atd.tty=/dev/ttySAC0
+ro.boot.selinux=enforcing
+ro.boot.bore_cnt=298
+ro.boot.dtbo_idx=9
+ro.boot.fmm_lock=0
+ro.boot.hardware=exynos9820
+ro.boot.revision=26
+ro.boot.ucs_mode=0
+ro.boot.ap_serial=0x020D0E16803A
+ro.boot.carrierid=HUI
+ro.boot.carrierid.param.offset=7340608
+ro.boot.dram_info=01,07,00,8G
+ro.boot.fastbootd=false
+ro.boot.prototype.param.offset=7351040
+ro.boot.bootloader=G975FXXUFHVE1
+ro.boot.fmp_config=0
+ro.boot.avb_version=1.1
+ro.boot.debug_level=0x4f4c
+ro.boot.force_upload=0x0
+ro.boot.warranty_bit=1
+ro.boot.emmc_checksum=3
+ro.boot.hmac_mismatch=0
+ro.boot.odin_download=1
+ro.boot.cp_reserved_mem=off
+ro.boot.recovery_offset=7355136
+ro.boot.verifiedbootstate=orange
+ro.omni.device=beyond2lte
+ro.omni.version=16.1.0-20220604-beyond2lte-HOMEMADE
+ro.omni.version.security_patch=
+ro.twrp.sar=true
+ro.twrp.boot=1
+ro.twrp.version=3.6.2_9-0
+ro.vndk.lite=true
+ro.vndk.version=28
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.build.id=PQ2A.190405.003
+ro.build.date=Sat Jun  4 01:11:23 UTC 2022
+ro.build.date.utc=1654305083
+ro.build.host=c67cb60a4d08
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=
+ro.build.flavor=omni_beyond2lte-eng
+ro.build.display.id=omni_beyond2lte-eng 12 PQ2A.190405.003 54 test-keys
+ro.build.product=beyond2lte
+ro.build.selinux=1
+ro.build.version.sdk=28
+ro.build.version.base_os=
+ro.build.version.release=12
+ro.build.version.codename=REL
+ro.build.version.incremental=54
+ro.build.version.preview_sdk=0
+ro.build.version.all_codenames=REL
+ro.build.version.security_patch=2022-05-01
+ro.build.version.min_supported_target_sdk=17
+ro.build.description=omni_beyond2lte-eng 12 PQ2A.190405.003 54 test-keys
+ro.build.characteristics=default
+ro.build.system_root_image=true
+ro.bionic.ld.warning=1
+ro.kernel.android.checkjni=1
+ro.secure=0
+ro.treble.enabled=false
+ro.zygote=zygote32
+ro.carrier=unknown
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.name=omni_beyond2lte
+ro.product.brand=Samsung
+ro.product.model=Galaxy S10+
+ro.product.device=beyond2lte
+ro.product.locale=en-US
+ro.product.manufacturer=samsung
+ro.baseband=unknown
+ro.bootmode=unknown
+ro.hardware=exynos9820
+ro.revision=26
+ro.services.whitelist.packagelist=com.google.android.gms
+ro.bootimage.build.date=Sat Jun 4 01:11:23 UTC 2022
+ro.bootimage.build.date.utc=1654305083
+ro.bootimage.build.fingerprint=Samsung/omni_beyond2lte/beyond2lte:12/PQ2A.190405.003/54:eng/test-keys
+ro.bootloader=G975FXXUFHVE1
+ro.debuggable=1
+ro.modversion=OmniROM-16.1.0-20220604-beyond2lte-HOMEMADE
+ro.setupwizard.enterprise_mode=1
+ro.property_service.version=2
+ro.control_privapp_permissions=enforce
+ro.actionable_compatible_property.enabled=false
+init.svc.adbd=running
+init.svc.nuker=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.set_permissive=stopped
+twrp.crash_counter=0
+twrp.action_complete=0
+keyguard.no_require_sim=true
+tombstoned.max_tombstone_count=50
+sys.usb.ffs.ready=1
+ro.build.fingerprint=Samsung/omni_beyond2lte/beyond2lte:12/PQ2A.190405.003/54:eng/test-keys
+log.tag.stats_log=I
+ro.logd.size.stats=64K
+ro.persistent_properties.ready=true
+pm.dexopt.boot=extract
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.shared=speed
+pm.dexopt.install=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=extract
+ro.boot.serialno=R58M4496S0B
+ro.serialno=R58M4496S0B
+service.adb.root=1
+net.bt.name=Android
+net.tethering.noprovisioning=true
+sys.usb.controller=10c00000.dwc3
+persist.sys.usb.config=adb
+persist.sys.dalvik.vm.lib.2=libart.so
+persist.sys.disable_rescue=true
+sys.usb.configfs=1
+
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+tw_get_context got selinux context: u:object_r:media_rw_data_file:s0
+I:Got default contexts and file mode for storage files.
+I:Copied file /cache/recovery/log.gz to /cache/recovery/last_log.gz
+pigz: abort: corrupted input -- invalid deflate data: /cache/recovery/log.gz
+I:No custom recovery folder found. Using TWRP as default.
+I:Attempt to load settings from settings file...
+I:InfoManager loading from '/data/media/0/TWRP/.twrps'.
+I:No custom recovery folder found. Using TWRP as default.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/R58M4496S0B'
+I:Copied file /etc/recovery.fstab to /cache/recovery/recovery.fstab
+I:Version number saved to '/cache/recovery/.version'
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'vfat'
+I:TWFunc::Set_Brightness: Setting brightness control to 12800
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:No custom recovery folder found. Using TWRP as default.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/R58M4496S0B'
+I:Starting MTP
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:sending message to add 65537 '/data/media/0' 'Internal Storage'
+I:Message sent, add storage ID: 65537 '/data/media/0'
+MTP Enabled
+I:[MTP] Starting MTP
+I:[MTP] created new mtpserver object
+I:[MTP] mtppipe add storage 65537 '/data/media/0'
+I:Check_Lifetime_Writes result: '88745'
+I:Starting Adb Backup FIFO
+I:App not installed
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'backup'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'mount'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'backup'
+I:Set page: 'backup_options'
+I:Set page: 'backup'
+I:Set page: 'backupname1'
+I:operation_start: 'GenerateBackupName'
+I:operation_end - status=0
+I:Set page: 'backupname2'
+I:Set page: 'filecheck'
+I:operation_start: 'FileExists'
+I:Set page: 'backup'
+I:operation_end - status=1
+I:Set page: 'backup_run'
+I:operation_start: 'Nandroid'
+Updating partition details...
+I:Data backup size is 2411MB, free: 468291MB.
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Backup Name is: 'G975FXXUFHVE1-orig-i'
+I:Backup_Folder is: '/data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i'
+I:Calculating backup details...
+ * Total number of partitions to back up: 2
+ * Total size of all data: 52MB
+ * Available space: 468291MB
+[BACKUP STARTED]
+ * Backup Folder: /data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i
+Backing up Baseband...
+I:Reading '/dev/block/platform/13d60000.ufs/by-name/radio', writing '/data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i/modem.emmc.win'
+I:Restored default metadata for /data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i/modem.emmc.win
+I:Partition Backup time: 0
+Backing up EFS...
+I:Creating backup...
+I:Creating tar file '/data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i/efs.ext4.win'
+I:Using compression...
+I:addFile '/efs/taas' including root: 0
+  ==> set selinux context: u:object_r:taas_efs_file:s0
+I:addFile '/efs/taas/taaslog' including root: 0
+  ==> set selinux context: u:object_r:taas_efs_file:s0
+I:addFile '/efs/taas/taas' including root: 0
+  ==> set selinux context: u:object_r:taas_efs_file:s0
+I:addFile '/efs/bluetooth' including root: 0
+  ==> set selinux context: u:object_r:bluetooth_efs_file:s0
+I:addFile '/efs/bluetooth/bt_addr' including root: 0
+  ==> set selinux context: u:object_r:bluetooth_efs_file:s0
+I:addFile '/efs/DAK' including root: 0
+  ==> set selinux context: u:object_r:prov_efs_file:s0
+I:addFile '/efs/factory.prop' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/root' including root: 0
+  ==> set selinux context: u:object_r:app_efs_file:s0
+I:addFile '/efs/prov_data' including root: 0
+  ==> set selinux context: u:object_r:prov_efs_file:s0
+I:addFile '/efs/prov_data/dev_root' including root: 0
+  ==> set selinux context: u:object_r:prov_efs_file:s0
+I:addFile '/efs/.nv_data.bak.md5' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/.nv_data.bak' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/telephony.prop' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/prov' including root: 0
+  ==> set selinux context: u:object_r:prov_efs_file:s0
+I:addFile '/efs/nv_data.bin.md5' including root: 0
+  ==> set selinux context: u:object_r:bin_nv_data_efs_file:s0
+I:addFile '/efs/nv.log' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/tee' including root: 0
+  ==> set selinux context: u:object_r:tee_efs_file:s0
+I:addFile '/efs/tee/srt' including root: 0
+  ==> set selinux context: u:object_r:tee_efs_file:s0
+I:addFile '/efs/mps_code.dat' including root: 0
+  ==> set selinux context: u:object_r:efs_file:s0
+I:addFile '/efs/nv_data.bin' including root: 0
+  ==> set selinux context: u:object_r:bin_nv_data_efs_file:s0
+I:addFile '/efs/wifi' including root: 0
+  ==> set selinux context: u:object_r:wifi_efs_file:s0
+I:addFile '/efs/wifi/.mac.info' including root: 0
+  ==> set selinux context: u:object_r:wifi_efs_file:s0
+I:Closing tar
+I:pigz process ended with RC=0
+I:Thread id 0 tarList done, 0 archives.
+I:Thread ID 0 finished successfully.
+I:InfoManager saving '/data/media/0/TWRP/BACKUPS/R58M4496S0B/G975FXXUFHVE1-orig-i/efs.info'
+I:createTarFork() process ended with RC=0
+I:Partition Backup time: 0
+Average backup rate for file systems: 2 MB/sec
+Average backup rate for imaged drives: 50 MB/sec
+[50 MB TOTAL BACKED UP]
+Updating partition details...
+I:Data backup size is 2411MB, free: 468240MB.
+I:Unable to mount '/external_sd'
+I:Actual block device: '', current file system: 'vfat'
+I:Unable to mount '/usb-otg'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+[BACKUP COMPLETED IN 3 SECONDS]
