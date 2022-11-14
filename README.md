@@ -2,6 +2,8 @@
 
 * Note only flash  according to Binary Version *
 
+*Any contributions are welcome~* 🎉
+
 ## Example
 `J701fxxUAcuh1` > `UA` is Binary Version
 
